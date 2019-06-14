@@ -24,12 +24,13 @@ class TodoListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "todoItemCell", for: indexPath)
         
-        print(itemArray[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "toDoItemCell", for: indexPath)
+        
         cell.textLabel?.text = itemArray[indexPath.row]
         
         return cell
+        
     }
 
 }
